@@ -1,0 +1,6 @@
+raw
+venv
+cropped
+labeled
+auto-cap
+*.mp4
