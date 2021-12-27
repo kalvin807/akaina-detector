@@ -7,7 +7,7 @@ from PIL import Image, ImageTk
 
 
 def random_unlabeled_img():
-    path = Path("cropped")
+    path = Path("datasets/cropped")
     random_path = list(path.iterdir())[0]
     return random_path
 
@@ -19,7 +19,7 @@ def must_folder(foldername):
 
 def write_labeled(label, isTrue, image):
     postfix = "yes" if isTrue else "no"
-    image.save(f"labeled/{label}_{postfix}.png")
+    image.save(f"datasets/labeled/{label}_{postfix}.png")
 
 
 def remove_file(path):
